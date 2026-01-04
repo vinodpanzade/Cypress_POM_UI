@@ -1,82 +1,70 @@
-🚀 Cypress Automation Framework | OrangeHRM
+# 🚀 Cypress Automation Framework | OrangeHRM  
+**Real-World UI Automation • Dynamic Data • Zero Hardcoding**
 
-Real-World UI Automation • Dynamic Data • Zero Hardcoding
+---
 
-✨ Why This Project Stands Out
+## ✨ Why This Project Stands Out
 
-Most automation projects test static data.
-This project tests real application behavior.
+Most automation projects test **static data**.  
+This project tests **real application behavior**.
 
-✔ No hard-coded users
-✔ No flaky row-count assertions
-✔ No fake dropdown handling
+- ✔ No hard-coded users  
+- ✔ No flaky row-count assertions  
+- ✔ No fake dropdown handling  
 
-👉 Built with real QA/SDET problems in mind.
+**Built with real QA/SDET problems in mind.**
 
-🧠 What I Automated (In a Smart Way)
-🔐 Login Validation
+---
 
-Secure login using Page Object Model
+## 🧠 What I Automated (In a Smart Way)
 
-Reusable LoginPage abstraction
+### 🔐 Login Validation
+- Secure login using Page Object Model  
+- Reusable `LoginPage` abstraction  
 
-👤 User Dropdown Validation
+---
 
+### 👤 User Dropdown Validation
 Dynamically validates dropdown options:
-
-About
-
-Support
-
-Change Password
-
-Logout
+- About  
+- Support  
+- Change Password  
+- Logout  
 
 Ensures:
+- Correct text  
+- Valid `href`  
+- HTTP **200 OK** for each link  
 
-Correct text
+**UI + backend link validation combined**
 
-Valid href
+---
 
-HTTP 200 OK for each link
+### 🧭 Feature Navigation Testing
+Automatically verifies navigation and page headers for:
+- Admin  
+- PIM  
+- Leave  
+- Time  
+- Recruitment  
+- Dashboard  
+- Directory  
+- Claim  
+- Buzz  
 
-✅ UI + backend link validation combined
+**Confirms correct page loads, not just clicks.**
 
-🧭 Feature Navigation Testing
+---
 
-Automatically verifies navigation & page headers for:
+## 🧩 The Core Innovation (🔥 This Is the Key)
 
-Admin
+### 📊 Dynamic Table-Driven Testing (No Hardcoding)
+- Reads all users dynamically from **Admin → System Users** table  
+- Converts each row into a JavaScript object  
+- Stores data using Cypress alias: `@usersData`  
+- Reuses the same data across multiple test flows  
 
-PIM
-
-Leave
-
-Time
-
-Recruitment
-
-Dashboard
-
-Directory
-
-Claim
-
-Buzz
-
-🎯 Confirms correct page loads, not just clicks.
-
-🧩 The Core Innovation (🔥 This Is the Key)
-📊 Dynamic Table-Driven Testing (NO Hardcoding)
-
-Reads all users dynamically from Admin → System Users table
-
-Converts each row into a JavaScript object
-
-Stores data using Cypress alias: @usersData
-
-Reuses the same data across multiple test flows
-
+```js
 {
   username,
   userRole,
@@ -93,10 +81,12 @@ cypress/
  │    └── step_definitions/
  ├── fixtures/
  └── support/
- 
 ✔ Page Object Model
+
 ✔ Cucumber BDD
+
 ✔ Readable step definitions
+
 ✔ Easy to extend
 
 🛠 Tech Stack
@@ -109,15 +99,11 @@ cypress/
 
 🧩 Page Object Model
 
-🌐 OrangeHRM Demo App
+🌐 OrangeHRM Demo Application
 
-Run Locally
-npm install
-npx cypress open
+📸 Visual Proof
 
-📸 Visual Proof (Highly Recommended)
-
-Screenshots included to show:
+Screenshots included to demonstrate:
 
 Login success
 
@@ -127,19 +113,7 @@ Dynamic table validation
 
 Cypress tests passing ✅
 
-🎯 Key Learnings
-
-Handling Cypress async behavior correctly
-
-Sharing data across tests using aliases
-
-Writing non-flaky UI tests
-
-Testing real UI logic, not dummy flows
-
 👨‍💻 Author
 
 Vinod Panzade
 QA / Test Engineer | Cypress Automation | SDET Aspirant
-
-
